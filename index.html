@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_25</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-container">
+        <input type="radio" id="PETROL" name="name" value="PETROL"/>
+        <label for="PETROL">PETROL</label>
+        <input type="radio" id="DIESEL" name="name" value="DIESEL" />
+        <label for="DIESEL">DIESEL</label>
+      </div>
+
+      <div class="sub-container">
+        <div class="city-selector">
+          <label for="city"></label>
+
+          <select name="cities" id="cities">
+            <option value="DELHI">DELHI</option>
+            <option value="MUMBAI">MUMBAI</option>
+            <option value="PUNJAB">PUNJAB</option>
+            <option value="BANGALORE">BANGALORE</option>
+            <option value="KOLKATA">KOLKATA</option>
+          </select>
+        </div>
+
+        <div class="date-selector">
+          <label for="date"></label>
+
+          <input type="date" id="date" name="start-date" value="2022-07-22" />
+        </div>
+
+        <div class="price">
+          <span class="text">PETROL PRICE IN DELHI</span>
+        </div>
+      </div>
+    </div>
+    <script src="./test.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.first-container {
+  padding: 5px;
+}
+
+.sub-container {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+label {
+  font-weight: bolder;
+}
+
+.text {
+  color: rgb(187, 178, 178);
+}
