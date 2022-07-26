@@ -1,6 +1,6 @@
-let priceUpdate = document.querySelectorAll(".table-data")[3];
+var priceUpdate = document.querySelectorAll(".table-data")[0];
 
-let serverURL = "https://jsonplaceholder.typicode.com/users";
+var serverURL = "https://jsonplaceholder.typicode.com/users";
 
 function getPriceData(input) {
     return serverURL + "?" + "text" + input
@@ -8,12 +8,24 @@ function getPriceData(input) {
 
 
 function clickHandler() {
-    fetch(getPriceData(data))
+    var txtInput = document.querySelectorAll(".table-data")[1];
+    console.log(txtInput);
+
+    var data = txtInput.value;
+
+    fetch(getPriceData('gh'))
     .then(response => response.json())
     .then(json => {
-        
+        console.log(json);
+        var fetchedData = json.address.city;
+
+        outputData.innerText = fetchedData;
     })
+    
 }
+
+priceUpdate.addEventListener("click", clickHandler)
+
 // priceUpdate.addEventListener("click", function eventHandler() {
 //     console.log("clicked!");
 // });
