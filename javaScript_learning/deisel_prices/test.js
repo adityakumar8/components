@@ -1,1 +1,0 @@
-let priceUpdate = document.querySelector()
