@@ -11,7 +11,7 @@ function clickHandler() {
     fetch(getPriceData(data))
     .then(response => response.json())
     .then(json => {
-
+        
     })
 }
 // priceUpdate.addEventListener("click", function eventHandler() {
