@@ -1,5 +1,5 @@
-let button = document.getElementById("PETROL");
+let radioBtn = document.getElementById("PETROL");
 
-button.addEventListener ("click", function clickEventHandler() {
-    console.log("clicked!")
+radioBtn.addEventListener ("click", function clickEventHandler() {
+    return radioBtn.style.color = "red";
 }) 

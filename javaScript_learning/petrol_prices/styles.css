@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-around;
+    border: 2px solid #ccc;
+}
+
+.bold {
+    font-weight: bolder;
+    margin: 10px 0px 10px 0px;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+.col_f, .col_s, .col_t {
+    list-style: none;
+}
+
+.cg {
+    color: green;
+
+}
+
+
+
