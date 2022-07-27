@@ -19,6 +19,8 @@
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  height: 81px;
+  width: 628px;
 }
 
 label {
@@ -27,4 +29,23 @@ label {
 
 .text {
   color: rgb(187, 178, 178);
+}
+
+#cities {
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+}
+
+.city-opt {
+  font-size: larger;
+  font-weight: 100;
+}
+
+.city-selector::after {
+  content: "";
+  border: 1px solid #ccc;
+  position: absolute;
+  height: 40px;
+  top: 66px;
 }
