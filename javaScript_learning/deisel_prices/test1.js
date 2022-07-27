@@ -1,4 +1,6 @@
 var priceUpdate = document.querySelectorAll(".table-data")[0];
+console.log(priceUpdate);
+
 
 var serverURL = "https://jsonplaceholder.typicode.com/users";
 
@@ -16,10 +18,11 @@ function clickHandler() {
     fetch(getPriceData('gh'))
     .then(response => response.json())
     .then(json => {
-        console.log(json);
-        var fetchedData = json.address.city;
-
-        outputData.innerText = fetchedData;
+        // var fetchedData = json.address.city;
+        document.getElementById('td').innerHTML = json[0].username;
+        console.log(json); 
+        // console.log(json[0].address);
+        // outputData.innerText = fetchedData;
     })
     
 }
