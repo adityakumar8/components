@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container {
-  border: 2px solid orangered;
+  border: 1px solid orangered;
   width: 700px;
   margin: 0 auto;
   padding: 5px;
@@ -35,9 +38,11 @@ input[name="name"] {
   border: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
+  border-radius: 3px;
   padding: 30px;
   height: 81px;
   width: 628px;
+  align-items: center;
 }
 
 label {
@@ -46,11 +51,12 @@ label {
 
 .text {
   color: rgb(187, 178, 178);
-
+  display: block;
+  padding-bottom: 6px;
 }
 
 #cities {
-  width: 60px;
+  width: 90px;
   border: none;
   background: none;
   -webkit-appearance: none;
@@ -58,41 +64,76 @@ label {
 }
 
 .city-opt {
+  position: relative;
   font-size: larger;
   font-weight: 100;
 }
 
-.city-opt {
-  position: relative;
-}
-/* .city-opt:after {
+.city-opt::after {
   content: "";
   position: absolute;
   height: 40px;
   top: -4px;
   right: 0;
-
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  display: block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg); 
-} */
+}
 
 #date {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
-  border-bottom-style: hidden; 
+  border-bottom-style: hidden;
+  margin-right: 6px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  height: 0; 
+  height: 0;
   background: transparent;
   padding: 10px;
 }
 
+input[type="date"] {
+  width: 119px;
+}
+
 .prices {
   display: flex;
+  align-items: flex-end;
+}
+
+.prices p {
+  margin-right: 10px;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.green{
+  text-align: center;
+  color: green;
+  font-size: small;
+  font-weight: 600;
+}
+
+.date-selector::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #ccc;
+  height: 40px;
+  top: 84px;
+}
+
+.city-selector {
+  padding-right: 7px;
+}
+
+.city-selector::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #ccc;
+  height: 40px;
+  top: 84px;
+}
+
+.city-opt:focus {
+  /* border: none; */
+  outline: none;
 }
