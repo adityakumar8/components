@@ -4,14 +4,31 @@
   box-sizing: border-box;
 }
 
+.main-container {
+  border: 2px solid orangered;
+  width: 700px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 15px;
+  height: 160px;
+}
+
 .container {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 15px;
   max-width: 600px;
 }
 
 .first-container {
   padding: 5px;
+}
+
+.first-container label:hover {
+  color: orangered;
+}
+
+input[name="name"] {
+  accent-color: orangered;
 }
 
 .sub-container {
@@ -29,12 +46,15 @@ label {
 
 .text {
   color: rgb(187, 178, 178);
+
 }
 
 #cities {
+  width: 60px;
   border: none;
   background: none;
   -webkit-appearance: none;
+  margin-right: 5px;
 }
 
 .city-opt {
@@ -42,10 +62,37 @@ label {
   font-weight: 100;
 }
 
-.city-selector::after {
+.city-opt {
+  position: relative;
+}
+/* .city-opt:after {
   content: "";
-  border: 1px solid #ccc;
   position: absolute;
   height: 40px;
-  top: 66px;
+  top: -4px;
+  right: 0;
+
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); 
+} */
+
+#date {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden; 
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  height: 0; 
+  background: transparent;
+  padding: 10px;
+}
+
+.prices {
+  display: flex;
 }
